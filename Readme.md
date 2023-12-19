@@ -77,12 +77,10 @@ git config --global user.email "EMAIL@xxxxxxxx"
    
 ```bash
     nano config.def.h
+    cp config.def.h config.h
+    make
+    sudo make install
 ```
-
-### cp config.def.h to config.h
-### make
-### sudo make install 
-
 
 ```bash
    cd ~./config 
@@ -95,6 +93,5 @@ git config --global user.email "EMAIL@xxxxxxxx"
    cd 
    nvim .xinitrc
    exec dwm
-
 ```
 
