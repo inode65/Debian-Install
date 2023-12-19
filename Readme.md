@@ -71,12 +71,14 @@ git config --global user.email "EMAIL@xxxxxxxx"
    git clone https://git.suckless.org/dwm 
    cd dwm
   ```
-  ### set alacritty as terminal 
-  ### static cons char *termcmd change st to alacritty
+
+### set alacritty as terminal 
+### static cons char *termcmd change st to alacritty
    
-  ```bash
-     nano config.def.h
-  ```
+```bash
+    nano config.def.h
+```
+
 ### cp config.def.h to config.h
 ### make
 ### sudo make install 
