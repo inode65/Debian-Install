@@ -1,7 +1,7 @@
 # Debian dotfiles and window manager files
 
 
-### Install a base Debian12 without Desktop Enviroment.  
+### Install a base Debian without Desktop Enviroment.  
 I tend to install some base tools before I snapshot a vBoxVM. 
 
 ```bash
@@ -83,7 +83,7 @@ git config --global user.email "EMAIL@xxxxxxxx"
    cd dmenu
    sudo make install 
 ```
-
+### start dwm
 ```bash
    cd 
    nvim .xinitrc
