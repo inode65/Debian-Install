@@ -1,4 +1,4 @@
-# Debian 12 dotfiles and window manager files
+# Debian dotfiles and window manager files
 
 
 ### Install a base Debian12 without Desktop Enviroment.  
@@ -8,12 +8,12 @@ I tend to install some base tools before I snapshot a vBoxVM.
 apt install sudo curl git neovim nano zsh zplug
 ```
 
-### if you used to give root a password and direct access you need to allow the non-root user to run sudo
-### I do that by editing sudoers file with visudo and leave the default group like [%sudo   ALL=(ALL:ALL) ALL]
+### If you want your user to have administrative acccess allow the non-root user to run sudo
+### Edit sudoers file with visudo and leave the default group e.g. [%sudo   ALL=(ALL:ALL) ALL]
 ### visudo will take your system default editor (nano,vim etc. )
 
-afterwards you need to add your non-root user to the sudo group
-###Add user to sudo group   
+Afterwards you need to add your non-root user to the sudo group
+### Add user to sudo group   
 ``` bash
 usermod -aG sudo $USERNAME
 ```
@@ -24,7 +24,7 @@ I prefer the zsh as default shell
 chsh -s /bin/zsh
 ```
 
-### for git you can use your git account details  in your home directory 
+### For git you can use your git account details in your home directory 
 ```bash
 git config --global user.name "USERNAME" 
 git config --global user.email "EMAIL@xxxxxxxx"
@@ -54,16 +54,11 @@ git config --global user.email "EMAIL@xxxxxxxx"
    sudo apt install xserver-xorg-core xserver-xorg-video-amdgpu xinit xinput x11-xserver-utils libx11-dev libxinerama-dev libxft-dev
 ```
 
-
 ```bash
    sudo apt install build-essential make alacritty firefox-esr pipewire  
 ```
 
-
-
-
-
-### prepare your config directories in your home directory
+### Prepare your config directories in your home directory
 
 ```bash
    mkdir -p ~/.config
@@ -72,8 +67,8 @@ git config --global user.email "EMAIL@xxxxxxxx"
    cd dwm
   ```
 
-### set alacritty as terminal 
-### static cons char *termcmd change st to alacritty
+### Set alacritty as terminal 
+### Static cons char *termcmd change st to alacritty
    
 ```bash
     nano config.def.h
@@ -93,5 +88,6 @@ git config --global user.email "EMAIL@xxxxxxxx"
    cd 
    nvim .xinitrc
    exec dwm
+```
 ```
 
